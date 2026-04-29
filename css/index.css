@@ -1,0 +1,141 @@
+@import url("https://unpkg.com/sanitize.css");
+body {
+  max-width: 980px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 20px;
+  position: relative;
+}
+
+#calendarBody {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+}
+#calendarBody p {
+  border: 1px solid #ccc;
+  height: 100%;
+  padding: 2px;
+  border-radius: 2px;
+}
+
+#CURRENTMonth {
+  font-size: 40px;
+}
+
+.week-header {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  width: 100%;
+}
+.week-header span {
+  border: 1px solid #ccc;
+  height: 100%;
+  padding: 0 2px;
+  text-align: center;
+  border: 1px solid #fff;
+}
+.week-header span:nth-child(1) {
+  background-color: #ccc;
+}
+.week-header span:nth-child(2) {
+  background-color: #ccc;
+}
+.week-header span:nth-child(3) {
+  background-color: #ccc;
+}
+.week-header span:nth-child(4) {
+  background-color: #ccc;
+}
+.week-header span:nth-child(5) {
+  background-color: #ccc;
+}
+.week-header span:nth-child(6) {
+  background-color: #ccc;
+}
+.week-header span:nth-child(7) {
+  background-color: #aaa;
+}
+
+.current {
+  background-color: rgba(165, 185, 189, 0.2);
+  font-weight: bold;
+}
+
+ul, li {
+  list-style: none;
+}
+
+.btnWrap {
+  margin-top: 40px;
+}
+.btnWrap ul {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+.btnWrap ul li {
+  bottom: unset;
+}
+
+#sideNav {
+  opacity: 0;
+  visibility: hidden;
+  width: 60%;
+  padding: 20px;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.8);
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: 0.5s;
+  transform: translateX(-100%);
+}
+#sideNav.is-active {
+  opacity: 1;
+  visibility: inherit;
+  transform: translateX(0);
+}
+#sideNav .inner {
+  position: relative;
+}
+#sideNav .inner #closeBtn {
+  position: absolute;
+  top: 0;
+  right: 0;
+  background-color: #000000;
+  border-radius: 100vh;
+  color: #fff;
+  display: block;
+  font-size: 18px;
+  width: 40px;
+  height: 40px;
+  border: 1px solid #fff;
+}
+#sideNav .inner #daiary {
+  padding: 8px;
+  width: 100%;
+  letter-spacing: 0.08rem;
+}
+
+#imageSlider {
+  width: 100%;
+  height: 200px;
+  overflow: hidden;
+  position: relative;
+  background-color: #aaa;
+  border-radius: 8px;
+}
+
+.slider-track {
+  display: flex;
+  transition: 0.5s;
+  height: 100%;
+}
+
+.slider-track img {
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+}/*# sourceMappingURL=index.css.map */

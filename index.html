@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="./css/index.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <header></header>
+  <main>
+    <div id="carender">
+      <p id="CURRENTMonth"></p>
+      <div class="week-header">
+        <span>月</span>
+        <span>火</span>
+        <span>水</span>
+        <span>木</span>
+        <span>金</span>
+        <span>土</span>
+        <span>日</span>
+      </div>
+      <div id="calendarBody"></div>
+      <!-- / -->
+      <!-- / -->
+    </div>
+    <div class="btnWrap">
+      <ul>
+        <li>
+          <button type="button" id="prev">前の月へ</button>
+        </li>
+        <li>
+          <button type="button" id="next">次の月へ</button>
+        </li>
+      </ul>
+    </div>
+    <!-- /.btnWrap -->
+     <div id="sideNav">
+      <div class="inner">
+      <h2 id="selectedDate"></h2>
+      <div id="scheduleArea"></div>
+      <p>本日のベストショット</p>
+      <div id="imageSlider">
+        <div class="slider-track"></div>
+      </div>
+      <input type="file" name="" id="imgUpload" accept="image/*">
+      <p>日記</p>
+      <textarea name="" id="daiary"></textarea>
+      <button id="closeBtn">×</button>
+      </div>
+      <!-- /.inner -->
+     </div>
+  </main>
+  <footer></footer>
+</body>
+</html>
