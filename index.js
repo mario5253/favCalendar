@@ -40,7 +40,7 @@ const monthDate = new Date(year, month + 1,0).getDate();
      
       if (
         year === today.getFullYear() &&
-        month === today.getDay() &&
+        month === today.getDay()-1 &&
         date === today.getDate()
       ) {
         p.className = 'current';
